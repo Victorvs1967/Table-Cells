@@ -25,38 +25,8 @@ class NameAndColorCell: UITableViewCell {
     }
   }
   
-  var nameLabel: UILabel!
-  var colorLabel: UILabel!
-  
-  override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: style, reuseIdentifier: reuseIdentifier)
-    
-    let nameLabelRect = CGRect(x: 0, y: 5, width: 70, height: 24)
-    let nameMaker = UILabel(frame: nameLabelRect)
-    nameMaker.textAlignment = NSTextAlignment.right
-    nameMaker.text = "Name:"
-    nameMaker.font = UIFont.boldSystemFont(ofSize: 14)
-    contentView.addSubview(nameMaker)
-    
-    let colorLabelRect = CGRect(x: 0, y: 26, width: 70, height: 24)
-    let colorMaker = UILabel(frame: colorLabelRect)
-    colorMaker.textAlignment = NSTextAlignment.right
-    colorMaker.text = "Color:"
-    colorMaker.font = UIFont.boldSystemFont(ofSize: 14)
-    contentView.addSubview(colorMaker)
-    
-    let nameValueRect = CGRect(x: 80, y: 5, width: 200, height: 24)
-    nameLabel = UILabel(frame: nameValueRect)
-    contentView.addSubview(nameLabel)
-    
-    let colorValueLabel = CGRect(x: 80, y: 25, width: 200, height: 24)
-    colorLabel = UILabel(frame: colorValueLabel)
-    contentView.addSubview(colorLabel)
-  }
-  
-  required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
+  @IBOutlet var nameLabel: UILabel!
+  @IBOutlet var colorLabel: UILabel!
   
   override func awakeFromNib() {
     super.awakeFromNib()

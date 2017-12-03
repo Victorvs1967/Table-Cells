@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellTableIdentifier" rowHeight="65" id="lE5-4w-ehN" customClass="NameAndColorCell" customModule="Table_Cells" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lE5-4w-ehN" id="YLw-Pu-KLa">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNu-e6-a2m">
+                        <rect key="frame" x="16" y="11" width="57" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="57" id="wjH-bJ-8oa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opw-5v-XfW">
+                        <rect key="frame" x="16" y="33" width="57" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOg-gs-4X6">
+                        <rect key="frame" x="75" y="11" width="284" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqb-7l-fBL">
+                        <rect key="frame" x="75" y="33" width="284" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rNu-e6-a2m" firstAttribute="trailing" secondItem="opw-5v-XfW" secondAttribute="trailing" id="61S-F0-Z0f"/>
+                    <constraint firstItem="rNu-e6-a2m" firstAttribute="top" secondItem="YLw-Pu-KLa" secondAttribute="topMargin" id="Bv8-eo-mPI"/>
+                    <constraint firstItem="MOg-gs-4X6" firstAttribute="trailing" secondItem="kqb-7l-fBL" secondAttribute="trailing" id="EIh-tC-5g8"/>
+                    <constraint firstItem="opw-5v-XfW" firstAttribute="bottom" secondItem="YLw-Pu-KLa" secondAttribute="bottomMargin" id="Wnc-iv-PU2"/>
+                    <constraint firstItem="MOg-gs-4X6" firstAttribute="leading" secondItem="kqb-7l-fBL" secondAttribute="leading" id="dPo-Tv-mbp"/>
+                    <constraint firstItem="rNu-e6-a2m" firstAttribute="leading" secondItem="YLw-Pu-KLa" secondAttribute="leadingMargin" id="jyn-T2-2Hz"/>
+                    <constraint firstItem="MOg-gs-4X6" firstAttribute="leading" secondItem="rNu-e6-a2m" secondAttribute="trailing" constant="2" id="lD2-3T-vU1"/>
+                    <constraint firstItem="rNu-e6-a2m" firstAttribute="leading" secondItem="opw-5v-XfW" secondAttribute="leading" id="ngR-WD-fUl"/>
+                    <constraint firstItem="opw-5v-XfW" firstAttribute="baseline" secondItem="kqb-7l-fBL" secondAttribute="baseline" id="v2G-8w-zSw"/>
+                    <constraint firstItem="rNu-e6-a2m" firstAttribute="baseline" secondItem="MOg-gs-4X6" secondAttribute="baseline" id="x03-CD-gPc"/>
+                    <constraint firstItem="MOg-gs-4X6" firstAttribute="trailing" secondItem="YLw-Pu-KLa" secondAttribute="trailingMargin" id="yuo-lE-kk5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="colorLabel" destination="kqb-7l-fBL" id="Tga-xY-gqX"/>
+                <outlet property="nameLabel" destination="MOg-gs-4X6" id="TVj-z3-Ac2"/>
+            </connections>
+            <point key="canvasLocation" x="-342.5" y="-522.5"/>
+        </tableViewCell>
+    </objects>
+</document>
